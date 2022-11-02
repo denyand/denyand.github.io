@@ -3,30 +3,138 @@
     margin: 0;
     box-sizing: border-box;
 }
+header{
+    display: inline;
+}
+
+
+
+.fContainer {
+    display: flex;
+    justify-content: top;
+    align-items: top;
+   
+}
+
+.wrapper {
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 1500px;
+    height: 40px;
+    background-color: black;
+    box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.firstname{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.firstname:hover{
+    color: #CC6600;
+    transform: rotate(3deg);
+}
+
+.lastname {
+    color: #CC6600;
+    font-weight: 400;
+    padding-left: 4px;
+    font-size: medium;
+}
+
+.lastname:hover{
+    color: #CC6600;
+    transform: rotate(3deg);
+}
+
+.navigation {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a {
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigation>li>a:hover{
+    color: #CC6600;
+    transition: all .5s ease-in-out;
+}
+.active {
+    background-color: #CC6600 ;
+    height: 60;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.active:hover{
+    color: navy!important;
+}
+
+.navigation>li>img{
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.navigation>li>img:hover{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
 body{
     background-color: #151320;
     height: 100vh;
     display: grid;
     place-items: center center;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Roboto',sans-serif;
 }
 h1{
     color: #ffffff;
 }
 .cards{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    padding: 20px;
-    grid-gap: 40px;
+    padding: 50px;
+    grid-gap: 10px;
 }
 .card{
-    background-color: #1c1b29;
+    background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
 }
 .container{
     position: relative;
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    
 }
 img{
     width: 100%;
@@ -48,7 +156,7 @@ img{
     padding: 20px 10px;
 }
 .details>h3{
-    color: #ffffff;
+    color: black;
     font-weight: 600;
     font-size: 18px;
     margin: 10px 0 15px 0;
