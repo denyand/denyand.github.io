@@ -183,18 +183,48 @@ footer{
 }
 
 .card-item{
+    text-align: center;
     width: 25%;
-    background: black;
-    color: navajowhite;
+    background: #CC6600;
+    color: whitesmoke;
     padding: 24px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.icon{
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card-description{
+    font-size: 14px;
+    margin-top: 4px;
 }
 
 @media screen and (max-width:500px) {
     .card {
         flex-direction: column;
-
+        gap: 0;
     }
     .card-item {
         width: 100%;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .intro{
+        margin-top: 20px;
+
+    }
+    .img-foto{
+        padding:0;
     }
 }
