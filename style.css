@@ -9,6 +9,10 @@ body {
 
 header{
     display: inline;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    
 }
 
 
@@ -22,12 +26,13 @@ header{
 
 .wrapper {
     display: flex;
+    width: 1500px;
+    flex-wrap: wrap;
+    position: relative;
     top: 0;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    width: 1500px;
-    height: 40px;
     background-color: black;
     box-shadow: 0px 7px 15px 0 rgba(0, 0, 0, 0.5);
 }
@@ -38,29 +43,42 @@ header{
     font-size: 1.5em;
     padding: 15px;
     text-transform: capitalize;
+    
+    
 }
 
 .firstname{
     color: whitesmoke;
     font-weight: 700;
     font-size: medium;
+    font-family: 'pacifico',cursive;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+    
+    
 }
 
 .firstname:hover{
     color: #CC6600;
     transform: rotate(3deg);
+    
 }
 
 .lastname {
     color: #CC6600;
     font-weight: 400;
+    font-family: 'pacifico',cursive;
+    cursor: pointer;
     padding-left: 4px;
     font-size: medium;
+    transition: all .5s ease 0s;
+    
+   
 }
 
 .lastname:hover{
-    color: #CC6600;
     transform: rotate(3deg);
+   
 }
 
 .navigation {
@@ -73,18 +91,24 @@ header{
 .navigation>li {
     list-style-type: none;
     padding: 15px;
+    transition: all .5s ease 0s;
+
+    
 }
 
 .navigation > li > a {
+    display: inline-block;
     color: whitesmoke;
     font-size: 15px;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all .5s ease 0s;
 }
 
 .navigation>li>a:hover{
     color: #CC6600;
-    transition: all .5s ease-in-out;
+    transform: rotate(3deg);
+    
 }
 .active {
     background-color: #CC6600 ;
@@ -94,7 +118,7 @@ header{
 }
 
 .active:hover{
-    color: navy!important;
+    color: black!important;
 }
 
 .navigation>li>img{
@@ -112,7 +136,7 @@ header{
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 .intro{
@@ -144,11 +168,11 @@ header{
 }
 
 .parallax{
-    background-image: url('image/y2.jpeg');
+    background-image: url('Image/y740s2.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: cover;
     height: 100vh;
 
 
@@ -166,12 +190,6 @@ header{
 
 }
 
-footer{
-    padding: 20px;
-    text-align: center;
-    background: #CC6600;
-    color: #eaeaea;
-}
 
 
 .card{
@@ -180,12 +198,14 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    
 }
+
 
 .card-item{
     text-align: center;
     width: 25%;
-    background: #CC6600;
+    background: black;
     color: whitesmoke;
     padding: 24px;
     box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
@@ -193,6 +213,7 @@ footer{
 }
 
 .icon{
+    width: 75px;
     margin: 10px;
     width: 75px;
     height: 75px;
@@ -208,6 +229,98 @@ footer{
     margin-top: 4px;
 }
 
+.team{
+    text-align: center;
+}
+.grid {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    align-items: center;
+   justify-content: center;
+    grid-gap: 30px;
+}
+
+img{
+    object-fit: cover;
+    
+}
+.grid > article{
+    color: #eaeaea;
+    box-shadow: 2px 5px 5px 1px black;
+    border-radius: 50px;
+    text-align: center;
+    background-color: black;
+    
+    transition: transform;
+}
+.grid > article img{
+    
+    align-items: center;
+	justify-content: center;
+    
+    border-radius:  50%;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: #CC6600;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+footer p:nth-child(3){
+	color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color: white;
+	bottom: 35px;
+	font-size: 14px; 
+
+}
 @media screen and (max-width:500px) {
     .card {
         flex-direction: column;
