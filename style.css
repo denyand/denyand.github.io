@@ -299,6 +299,25 @@ img{
 	margin-bottom: 45px;
     
 }
+.navi>li {
+    list-style-type: none;
+    padding: 15px;
+    transition: all .5s ease 0s;   
+}
+
+.navi > li > a {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .5s ease 0s;
+}
+
+.navi >li>a:hover{
+    color: #CC6600;
+    transform: rotate(3deg);
+}
 footer{
 	position: relative;
 	width: 100%;

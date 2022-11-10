@@ -109,26 +109,29 @@ h1{
     text-align: center;
 }
 .grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 30px;
     align-items: center;
-    grid-gap: 30px;
+    grid-gap: 100px;
 }
 img{
-    object-fit: contain;
+    object-fit: cover;
 }
 .grid > article{
     box-shadow: 2px 5px 5px 1px black;
-    border-radius: 30px;
+    border-radius: 50px;
     text-align: center;
     background-color: whitesmoke;
     width: 300px;
     transition: transform;
 }
 .grid > article img{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    align-items: center;
+    justify-content: center;
 }
 .konten{
     cursor: cell;
