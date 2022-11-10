@@ -265,18 +265,13 @@ img{
     border-radius:  50%;
 }
 .main{
-	width: 800px;
-	max-width: 100%;
+	width: 1130px;
+	max-width: 95%%;
 	margin: 0 auto;
-	display: block;
+	display: flex;
 	align-items: center;
-	justify-content: center;
-    background-image: url('Image/hmm.jpeg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
+	justify-content: space-around;
+ 
 
 }
 
@@ -286,7 +281,7 @@ img{
 	font-size: 55px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
-    justify-content: center;
+    
 }
 .about-text h5{
 	color: black;
@@ -294,8 +289,7 @@ img{
 	font-size: 22px;
 	margin-bottom: 25px;
 	text-transform: capitalize;
-    justify-content: center;
-    align-items: center;
+    
 }
 .about-text p{
 	color: #CC6600;
@@ -303,8 +297,7 @@ img{
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 45px;
-    justify-content: center;
-    align-items: center;
+    
 }
 footer{
 	position: relative;
