@@ -119,7 +119,7 @@ h1{
     grid-gap: 100px;
 }
 img{
-    object-fit: cover;
+    object-fit: contain;
 }
 .grid > article{
     box-shadow: 2px 5px 5px 1px black;
